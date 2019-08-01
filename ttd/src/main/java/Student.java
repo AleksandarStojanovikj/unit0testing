@@ -16,12 +16,12 @@ public class Student {
 
         //studentAisBetterThenStudentB
         if (student.getAverageGrade() > this.averageGrade && student.getNumberOfSubjects() >= this
-            .getNumberOfSubjects() && !this.equals(student)) {
+                .getNumberOfSubjects() && !this.equals(student)) {
             return true;
         }
         //studentBisBetterThenStudentA
         if (student.getNumberOfSubjects() <= this.getNumberOfSubjects() && student.getAverageGrade() < this
-            .getAverageGrade() && !this.equals(student)) {
+                .getAverageGrade() && !this.equals(student)) {
             return true;
         }
         //checkIfItIsTheSameStudent
@@ -30,24 +30,24 @@ public class Student {
         }
         //studentAHasBecomeBetterInTimeThanB
         if (student.getAverageGrade() > student.getStartTestGrade() && this.getAverageGrade() < this
-            .getStartTestGrade()) {
+                .getStartTestGrade()) {
             return true;
         }
 
         //studentBHasBecomeBetterInTimeThanA
         if (student.getAverageGrade() < student.getStartTestGrade() && this.getAverageGrade() > this
-            .getStartTestGrade()) {
+                .getStartTestGrade()) {
             return true;
         }
         //bothStudentsHaveBecomeBetterInTime
         if (student.getAverageGrade() > student.getStartTestGrade() && this.getStartTestGrade() > this
-            .getStartTestGrade()) {
+                .getStartTestGrade()) {
             return true;
         }
 
         //bothStudentsHaveNotBecomeBetterInTime
         if (student.getAverageGrade() < student.getStartTestGrade() && this.getStartTestGrade() < this
-            .getStartTestGrade()) {
+                .getStartTestGrade()) {
             return true;
         }
 
